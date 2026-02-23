@@ -6,14 +6,48 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F7DCD2902F4C000100024AC4 /* VibeFinderSync.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F7DCD2922F4C000100024AC4 /* VibeFinderSync.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7DCD2912F4C000100024AC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7DCD2622F4BEC2E00024AC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7DCD2952F4C000100024AC4;
+			remoteInfo = VibeFinderSync;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F7DCD2882F4BED5C00024AC4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F7DCD2902F4C000100024AC4 /* VibeFinderSync.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F7DCD26A2F4BEC2E00024AC4 /* VibeMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VibeMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7DCD2922F4C000100024AC4 /* VibeFinderSync.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VibeFinderSync.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F7DCD26C2F4BEC2E00024AC4 /* VibeMenu */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = VibeMenu;
+			sourceTree = "<group>";
+		};
+		F7DCD2932F4C000100024AC4 /* VibeFinderSync */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = VibeFinderSync;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,12 +60,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F7DCD2942F4C000100024AC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		F7DCD2612F4BEC2E00024AC4 = {
 			isa = PBXGroup;
 			children = (
+				F7DCD2932F4C000100024AC4 /* VibeFinderSync */,
 				F7DCD26C2F4BEC2E00024AC4 /* VibeMenu */,
 				F7DCD26B2F4BEC2E00024AC4 /* Products */,
 			);
@@ -41,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				F7DCD26A2F4BEC2E00024AC4 /* VibeMenu.app */,
+				F7DCD2922F4C000100024AC4 /* VibeFinderSync.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +98,12 @@
 				F7DCD2662F4BEC2E00024AC4 /* Sources */,
 				F7DCD2672F4BEC2E00024AC4 /* Frameworks */,
 				F7DCD2682F4BEC2E00024AC4 /* Resources */,
+				F7DCD2882F4BED5C00024AC4 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F7DCD2982F4C000100024AC4 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				F7DCD26C2F4BEC2E00024AC4 /* VibeMenu */,
@@ -69,6 +114,28 @@
 			productName = VibeMenu;
 			productReference = F7DCD26A2F4BEC2E00024AC4 /* VibeMenu.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F7DCD2952F4C000100024AC4 /* VibeFinderSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7DCD29B2F4C000100024AC4 /* Build configuration list for PBXNativeTarget "VibeFinderSync" */;
+			buildPhases = (
+				F7DCD2972F4C000100024AC4 /* Sources */,
+				F7DCD2942F4C000100024AC4 /* Frameworks */,
+				F7DCD2962F4C000100024AC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F7DCD2932F4C000100024AC4 /* VibeFinderSync */,
+			);
+			name = VibeFinderSync;
+			packageProductDependencies = (
+			);
+			productName = VibeFinderSync;
+			productReference = F7DCD2922F4C000100024AC4 /* VibeFinderSync.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +148,9 @@
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					F7DCD2692F4BEC2E00024AC4 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					F7DCD2952F4C000100024AC4 = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
@@ -100,12 +170,20 @@
 			projectRoot = "";
 			targets = (
 				F7DCD2692F4BEC2E00024AC4 /* VibeMenu */,
+				F7DCD2952F4C000100024AC4 /* VibeFinderSync */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F7DCD2682F4BEC2E00024AC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DCD2962F4C000100024AC4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +200,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F7DCD2972F4C000100024AC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7DCD2982F4C000100024AC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7DCD2952F4C000100024AC4 /* VibeFinderSync */;
+			targetProxy = F7DCD2912F4C000100024AC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F7DCD2732F4BEC2F00024AC4 /* Debug */ = {
@@ -251,10 +344,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				DEVELOPMENT_TEAM = GJ4L3MYV8N;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -281,10 +375,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				DEVELOPMENT_TEAM = GJ4L3MYV8N;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,6 +394,52 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F7DCD2992F4C000100024AC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = VibeFinderSync/VibeFinderSync.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GJ4L3MYV8N;
+				EXCLUDED_SOURCE_FILE_NAMES = Info.plist;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = VibeFinderSync-Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaojie.VibeMenu.VibeFinderSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F7DCD29A2F4C000100024AC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = VibeFinderSync/VibeFinderSync.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GJ4L3MYV8N;
+				EXCLUDED_SOURCE_FILE_NAMES = Info.plist;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = VibeFinderSync-Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaojie.VibeMenu.VibeFinderSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -320,6 +461,15 @@
 			buildConfigurations = (
 				F7DCD2762F4BEC2F00024AC4 /* Debug */,
 				F7DCD2772F4BEC2F00024AC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7DCD29B2F4C000100024AC4 /* Build configuration list for PBXNativeTarget "VibeFinderSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7DCD2992F4C000100024AC4 /* Debug */,
+				F7DCD29A2F4C000100024AC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
